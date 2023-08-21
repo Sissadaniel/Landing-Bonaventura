@@ -12,9 +12,8 @@
         if (url.match(/bonaventura\.com\.mx\/guias\/\d+/)) {
             // Extract the ISBN from the URL
             var isbn = url.split('/').pop();
-            
             // Redirect to the new URL
-            window.location.replace('?isbn=' + isbn);
+            window.location.replace('guias/?isbn=' + isbn);
         } else {
             // Display an error message
             document.write('<h1>Page not found</h1>');
