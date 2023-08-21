@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page not found</title>
+</head>
+<body>
+    <script>
+        // Get the current URL
+        var url = window.location.href;
+        
+        // Check if the URL matches the pattern
+        if (url.match(/bonaventura\.com\.mx\/guias\/\d+/)) {
+            // Extract the ISBN from the URL
+            var isbn = url.split('/').pop();
+            
+            // Redirect to the new URL
+            window.location.replace('bonaventura.com.mx/guias?isbn=' + isbn);
+        } else {
+            // Display an error message
+            document.write('<h1>Page not found</h1>');
+        }
+    </script>
+</body>
+</html>
