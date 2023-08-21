@@ -57,7 +57,7 @@
   const getGuide = async () => {
     try {
       const data = await fetch(
-        `https://${version?version+"--":""}bonaventura.gianesini.autocode.gg/select/guias?isbn=${isbn}`
+        `https://gianesini.autocode.dev/bonaventura/select/guias?isbn=${isbn}`
       );
       if(data.status == 200) {
 				const json = await data.json();
