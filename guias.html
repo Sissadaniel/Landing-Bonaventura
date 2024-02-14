@@ -63,7 +63,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   const getGuide = async () => {
     try {
       const data = await fetch(
-        `https://gianesini.autocode.dev/bonaventura/select/guias?isbn=${isbn}`
+        ` https://bonaventura-backend.productosdigitales.mx/select/guias?isbn=${isbn}`
       );
       if(data.status == 200) {
 				const json = await data.json();
