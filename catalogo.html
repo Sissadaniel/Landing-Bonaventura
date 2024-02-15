@@ -72,7 +72,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	};
   
   const getCatalog = async (lowerAge,upperAge,offset,query) => {
-    let url = `https://${version?version+"--":""}bonaventura.gianesini.autocode.gg/select/catalogo?lowerAge=${lowerAge}&upperAge=${upperAge}&offset=${offset?offset:0}`;
+    let url = `https://${version?version+"--":""}https://bonaventura-backend.productosdigitales.mx/select/catalogo?lowerAge=${lowerAge}&upperAge=${upperAge}&offset=${offset?offset:0}`;
     if (query) {
     	url += `&query=${query}`;
     }
